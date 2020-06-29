@@ -1,0 +1,58 @@
+// 將您的按鍵組合放入此檔案中以覆寫預設值
+[
+  {
+    //Wrap with html tag
+    "key": "ctrl+shift+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    //Go to matching tag
+    "key": "cmd+m",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    //Update surrounding tag 
+    //Change Tag with Emmet
+    "key": "shift+cmd+t",
+    "command": "editor.emmet.action.updateTag",
+    "when": "editorTextFocus"
+  },
+  {
+    //專案下新增檔案後可直接打檔名
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+  },
+  {
+    //專案下新增資料夾後可直接打檔名
+    "key": "cmd+shift+n",
+    "command": "explorer.newFolder",
+  },
+  {
+    //觸發程式碼片段提示
+    "key": "alt+s",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    //在 VS Code 快速切換 Editor 與 Terminal
+    "key": "alt+1",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  },
+  {
+    //在 VS Code 快速切換 Editor 與 Terminal
+    "key": "alt+1",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+[",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+cmd+]",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  }
+]
